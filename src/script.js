@@ -69,12 +69,12 @@ function checkWin(board, player) {
 function gameOver(gameWon){
   for (let index of winCombos[gameWon.index]) {
     document.getElementById(index).style.backgroundColor = 
-      gameWon.player === huPlayer ? "blue" : "red";
+      gameWon.player === huPlayer ? "blue" : "rgba(38, 95, 92, 0.842)";
   }
   for (let i=0; i < cells.length; i++) {
     cells[i].removeEventListener('click', turnClick, false);
   }
-  declareWinner(gameWon.player === huPlayer ? "You win!" : "You lose");
+  declareWinner(gameWon.player === huPlayer ? "Kamu Menang!" : "Kamu Kalah");
 }
 
 function declareWinner(who) {
@@ -92,10 +92,10 @@ function bestSpot(){
 function checkTie() {
   if (emptySquares().length === 0){
     for (cell of cells) {
-      cell.style.backgroundColor = "green";
+      cell.style.backgroundColor = "rgba(38, 95, 92, 0.842)";
       cell.removeEventListener('click',turnClick, false);
     }
-    declareWinner("Tie game");
+    declareWinner("Permainan Seri");
     return true;
   } 
   return false;

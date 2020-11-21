@@ -9,7 +9,7 @@ td {
   cursor: pointer;
 }
 body {
-  background: url('bg.png');
+  background: url('white.jpg');
   color: #fff;
 }
 
@@ -38,34 +38,34 @@ table tr td:last-child {
 
 .endgame {
   display: none;
-  width:  200px;
+  width:  270px;
   top: 120px;
-  background-color:  rgba(147, 131, 221, 0.8);
+  background-color:  rgba(26, 19, 23, 0.548);
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -135px;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   border-radius: 5px;
-  color: white;
+  color: rgb(241, 241, 241);
   font-size: 2em; 
 }
 
 .selectSym{
   display: none;
-  width: 220px;
-  top: 110px;
-  background-color: rgba(147, 131, 221, 0.8);
+  width: 250px;
+  top: 80px;
+  background-color: rgba(26, 19, 23, 0.247);
   position: absolute;
   left: 50%;
-  margin-left: -110px;
-  padding-top: 10px;
-  padding-bottom: 70px;
+  margin-left: -125px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   text-align: center;
   border-radius: 5px;
-  color: black;
-  font-size: 2em; 
+  color: rgb(49, 58, 41);
+  font-size: 2.5em; 
 }
 
 .selectSym button{
@@ -77,10 +77,24 @@ table tr td:last-child {
 
 .selectSym  button:first-of-type {
   margin-right: 10px;
-  background-color:rgba(250, 144, 215, 0.8);
+  color : rgba(244, 245, 247, 0.541);
+  background-color:rgba(26, 19, 23, 0.8);
 }
 .selectSym  button:last-of-type {
   margin-left: 10px;
-  background-color: rgba(250, 144, 215, 0.8);
+  color : rgba(244, 245, 247, 0.541);
+  background-color: rgba(26, 19, 23, 0.8);
 }
 
+.replaybutton button{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:  35px;
+  width: 200px;
+  top: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-bottom: 20x;
+  color : rgb(254, 255, 253);
+  background-color: rgba(38, 95, 92, 0.842);
+}
